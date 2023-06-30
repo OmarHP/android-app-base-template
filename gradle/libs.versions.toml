@@ -3,22 +3,20 @@
 ######################################################################
 [versions]
 # General
-accompanist = "0.23.1"
+accompanist = "0.30.1"
 agp = "7.4.2"
 apollo = "3.7.2"
-hilt = "2.42"
-kotlin = "1.7.10"
-mockk = "1.12.3"
-okHttp = "4.9.3"
+hilt = "2.46.1"
+kotlin = "1.8.22"
+mockk = "1.13.5"
+okHttp = "4.11.0"
 
 # Androidx
 androidx-lifecycle = "2.3.1"
 
 # AndroidX Compose
-androidx-composeCompiler = "1.3.0"
-androidx-composeMaterial ="1.2.1"
-androidx-composeRuntime = "1.2.1"
-androidx-composeUI ="1.2.1"
+androidx-composeBom = "2023.06.01"
+androidx-composeCompiler = "1.4.8"
 
 # AndroidX Navigation
 androidx-navigation = "2.4.2"
@@ -40,13 +38,15 @@ androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-view
 androidx-lifecycle-runtimeKtx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
 
 # AndroidX Compose
-androidx-compose-material = { module = "androidx.compose.material:material", version.ref = "androidx-composeMaterial" }
-androidx-compose-materialIconsExtended = { module = "androidx.compose.material:material-icons-extended", version.ref = "androidx-composeMaterial" }
-androidx-compose-uiTestJUnit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "androidx-composeUI" }
-androidx-compose-uiTestManifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "androidx-composeUI" }
-androidx-compose-uiTooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "androidx-composeUI" }
-androidx-compose-uiToolingPreview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "androidx-composeUI" }
-androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "androidx-composeUI" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "androidx-composeBom" }
+androidx-compose-material = { module = "androidx.compose.material:material" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
+androidx-compose-materialIconsExtended = { module = "androidx.compose.material:material-icons-extended" }
+androidx-compose-uiTestJUnit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+androidx-compose-uiTestManifest = { module = "androidx.compose.ui:ui-test-manifest" }
+androidx-compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
+androidx-compose-uiToolingPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
 accompanist-navigationMaterial = { module = "com.google.accompanist:accompanist-navigation-material", version.ref = "accompanist" }
 
 # AndroidX Navigation

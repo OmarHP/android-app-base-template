@@ -61,9 +61,12 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtimeKtx)
 
     // AndroidX Compose
+    implementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.uiToolingPreview)
-    implementation(libs.androidx.compose.material)
+    implementation(libs.androidx.compose.material3)
     androidTestImplementation(libs.androidx.compose.uiTestJUnit4)
     debugImplementation(libs.androidx.compose.uiTooling)
     debugImplementation(libs.androidx.compose.uiTestManifest)

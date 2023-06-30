@@ -10,6 +10,7 @@ import com.ohp.app.presentation.main.MainScreen
 import com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi
 import com.google.accompanist.navigation.material.ModalBottomSheetLayout
 import com.google.accompanist.navigation.material.rememberBottomSheetNavigator
+import com.ohp.app.application.ui.theme.MyAppTheme
 
 @OptIn(ExperimentalMaterialNavigationApi::class)
 @Composable
@@ -17,13 +18,14 @@ fun MyApp() {
 
     val bottomSheetNavigator = rememberBottomSheetNavigator()
     val navController = rememberNavController(bottomSheetNavigator)
-
-    ModalBottomSheetLayout(
-        bottomSheetNavigator = bottomSheetNavigator,
-        modifier = Modifier.systemBarsPadding()
-    ) {
-        NavHost(navController, "main") {
-            composable(route = "main") { MainScreen() }
+    MyAppTheme {
+        ModalBottomSheetLayout(
+            bottomSheetNavigator = bottomSheetNavigator,
+            modifier = Modifier.systemBarsPadding()
+        ) {
+            NavHost(navController, "main") {
+                composable(route = "main") { MainScreen() }
+            }
         }
     }
 }
