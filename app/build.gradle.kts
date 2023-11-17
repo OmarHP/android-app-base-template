@@ -8,6 +8,7 @@ plugins {
 }
 
 android {
+    namespace = "com.ohp.app"
     val androidCompileSdk: Int by rootProject.extra
     val androidTargetSdk: Int by rootProject.extra
     val androidMinSdk: Int by rootProject.extra
@@ -32,11 +33,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
         freeCompilerArgs = listOf("-Xopt-in=kotlin.RequiresOptIn")
     }
     buildFeatures {
@@ -45,7 +46,7 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.androidx.composeCompiler.get()
     }
-    packagingOptions {
+    packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }

@@ -1,6 +1,6 @@
 buildscript {
-    extra["androidCompileSdk"] = 33 // Allows newer APIs to be used
-    extra["androidTargetSdk"] = 33 // Opts the app in to new runtime behavior
+    extra["androidCompileSdk"] = 34 // Allows newer APIs to be used
+    extra["androidTargetSdk"] = 34 // Opts the app in to new runtime behavior
     extra["androidMinSdk"] = 26 // Determines which devices the app can be installed on
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
